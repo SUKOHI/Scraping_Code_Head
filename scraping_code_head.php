@@ -115,3 +115,15 @@ class Scraping_Code_Head extends Scraping_Code {
 	}
 	
 }
+
+/*** Sample
+
+	require 'scraping_code.php';
+	require 'scraping_code_head.php';
+
+	$scraping = new Scraping_Code_Head();
+	$scraping->setSubject($html_code);
+	$scraping->stripLineBreak();
+	$head_data = $scraping->getHeadData($site_url);
+
+***/
